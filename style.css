@@ -953,3 +953,7 @@ button {
   letter-spacing: 0.02em;
   margin-bottom: 40px;
 }
+
+.nav {
+  -webkit-transform: translateZ(0);
+}
