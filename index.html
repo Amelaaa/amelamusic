@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Amela Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400;1,9..144,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ───────────────── NAVIGATION ───────────────── -->
+    <nav class="nav" id="nav">
+      <a href="#hero" class="nav__logo">Amela Music</a>
+
+      <ul class="nav__links" id="navLinks">
+        <!-- <li><a href="about.html" class="nav__link">Om mig</a></li> -->
+        <li><a href="#projects" class="nav__link">Projekt</a></li>
+        <!-- <li><a href="#skills" class="nav__link">Kompetenser</a></li> -->
+        <li><a href="#contact" class="nav__link">Kontakt</a></li>
+      </ul>
+
+      <button class="nav__lang" id="langToggle" aria-label="Switch language">
+        SV
+      </button>
+
+      <button
+        class="nav__burger"
+        id="burger"
+        aria-label="Öppna meny"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile overlay -->
+    <div class="nav__overlay" id="navOverlay">
+  <ul class="nav__links">
+    <!-- <li><a href="about.html"          class="nav__link">Om mig</a></li> -->
+    <li><a href="index.html#projects" class="nav__link">Projekt</a></li>
+    <!-- <li><a href="index.html#skills"   class="nav__link">Kompetenser</a></li> -->
+    <li><a href="index.html#contact"  class="nav__link">Kontakt</a></li>
+  </ul>
+</div>
+
+    <!-- ───────────────── HERO ───────────────── -->
+    <section class="hero" id="hero">
+      <div class="hero__bg"></div>
+      <div class="hero__content" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+<h1 class="hero__title fade-up"><em>Amela Music</em></h1>
+<p class="hero__disciplines fade-up">UX Design · Grafisk Design · Webbutveckling</p>
+        <div class="hero__cta fade-up">
+          <a href="#projects" class="btn btn--primary">Se mina projekt</a>
+          <a href="#contact" class="btn btn--ghost">Kontakta mig</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── PROJECTS ───────────────── -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header fade-up">
+          <!-- <span class="section__tag">Projekt</span> -->
+          <!-- <h2 class="section__title">Vad jag har byggt</h2> -->
+          <!-- <p class="section__desc">
+            Ett urval av projekt inom UX, grafisk design och webbutveckling.
+          </p> -->
+        </div>
+
+        <div class="projects__grid">
+          <!-- ── PROJEKT 1 ── -->
+          <article class="project-card fade-up" data-category="ux">
+            <a href="projects/consid.html" class="project-card__inner">
+              <div class="project-card__image">
+                <!-- <div class="project-card__meta">
+                  <span class="project-card__year">2024</span>
+                </div> -->
+                <!-- BYT UT: <img src="images/project-1.jpg" alt="Projektnamn" /> -->
+                <div class="project-card__img-placeholder">
+                  <img src="images/consid-cover.png" alt="Projektnamn" />
+                  <!-- <div class="project-card__img-pattern"></div> -->
+                </div>
+                <div class="project-card__overlay">
+                  <span class="project-card__view">Se projekt →</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <!-- <span class="project-card__tag">Webbutveckling · UX Design</span> -->
+                <h3 class="project-card__title">CONSID</h3>
+              </div>
+            </a>
+          </article>
+
+          <!-- ── PROJEKT 2 ── -->
+          <article class="project-card fade-up" data-category="graphic">
+            <a href="projects/aurah.html" class="project-card__inner">
+              <div
+                class="project-card__image"
+                style="--ph-hue: 210"
+              >
+                <!-- <div class="project-card__meta">
+                  <span class="project-card__year">2025</span>
+                </div> -->
+                <div class="project-card__img-placeholder">
+                  <img src="images/aurah-cover.png" alt="Projektnamn" />
+                  <!-- <div class="project-card__img-pattern"></div> -->
+                </div>
+                <div class="project-card__overlay">
+                  <span class="project-card__view">Se projekt →</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <!-- <span class="project-card__tag">Grafisk Design</span> -->
+                <h3 class="project-card__title">AURAH</h3>
+              </div>
+            </a>
+          </article>
+
+          <!-- ── PROJEKT 3 ── -->
+          <article class="project-card fade-up" data-category="web">
+            <a href="projects/vilaventia.html" class="project-card__inner">
+              <div
+                class="project-card__image"
+                style="--ph-hue: 340"
+              >
+                <!-- <div class="project-card__meta">
+                  <span class="project-card__year">2023</span>
+                </div> -->
+                <div class="project-card__img-placeholder">
+                  <img src="images/vilaventia-cover.png" alt="Vilaventia" style="object-position: top;" />
+                  <!-- <div class="project-card__img-pattern"></div> -->
+                </div>
+                <div class="project-card__overlay">
+                  <span class="project-card__view">Se projekt →</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <!-- <span class="project-card__tag">Grafisk design · Marknadsföring</span> -->
+                <h3 class="project-card__title">VILAVENTIA</h3>
+              </div>
+            </a>
+          </article>
+
+          <!-- ── PROJEKT 4 ── -->
+          <article class="project-card fade-up" data-category="ux">
+            <a href="projects/scanela.html" class="project-card__inner">
+              <div
+                class="project-card__image"
+                style="--ph-hue: 160"
+              >
+                <!-- <div class="project-card__meta">
+                  <span class="project-card__year">2026</span>
+                </div> -->
+                <div class="project-card__img-placeholder">
+                  <img src="images/scanela-cover.png" alt="Projektnamn" />
+                  <!-- <div class="project-card__img-pattern"></div> -->
+                </div>
+                <div class="project-card__overlay">
+                  <span class="project-card__view">Se projekt →</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <!-- <span class="project-card__tag">UX Design · Webbutveckling · Marknadsföring </span> -->
+                <h3 class="project-card__title">SCANELA</h3>
+              </div>
+            </a>
+          </article>
+
+                    <!-- ── PROJEKT 5 ── -->
+          <article class="project-card fade-up" data-category="ux">
+            <a href="projects/poster.html" class="project-card__inner">
+              <div
+                class="project-card__image"
+                style="--ph-hue: 160"
+              >
+                <!-- <div class="project-card__meta">
+                  <span class="project-card__year">2026</span>
+                </div> -->
+<img src="images/poster.png" alt="Poster" style="object-fit: cover; object-position: top; position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1;" />
+                <div class="project-card__overlay">
+                  <span class="project-card__view">Se projekt →</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <!-- <span class="project-card__tag">Grafisk design</span> -->
+                <h3 class="project-card__title">POSTER</h3>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── SKILLS ───────────────── -->
+    <!-- <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__tag">Kompetenser</span>
+          <h2 class="section__title">Vad jag kan</h2>
+        </div>
+        <div class="skills__grid">
+          <div class="skill-group fade-up">
+            <div class="skill-group__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"
+                />
+              </svg>
+            </div>
+            <h3>UX Design</h3>
+            <ul>
+              <li>User Research &amp; Intervjuer</li>
+              <li>Wireframing &amp; Prototyping</li>
+              <li>Usability Testing</li>
+              <li>Information Architecture</li>
+              <li>Design Systems</li>
+              <li>Figma / Adobe XD</li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-up">
+            <div class="skill-group__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M12 2v3m0 14v3M4.22 4.22l2.12 2.12m11.32 11.32 2.12 2.12M2 12h3m14 0h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"
+                />
+              </svg>
+            </div>
+            <h3>Grafisk Design</h3>
+            <ul>
+              <li>Varumärkesutveckling</li>
+              <li>Typografi</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe InDesign</li>
+              <li>Print &amp; Digital</li>
+            </ul>
+          </div>
+
+          <div class="skill-group fade-up">
+            <div class="skill-group__icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Webbutveckling</h3>
+            <ul>
+              <li>HTML5 / CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>[Lägg till ramverk]</li>
+              <li>Responsiv design</li>
+              <li>Tillgänglighet (WCAG)</li>
+              <li>Git &amp; versionshantering</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ───────────────── CONTACT ───────────────── -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="contact__inner fade-up">
+          <span class="section__tag">Kontakt</span>
+          <h2 class="section__title">
+            Låt oss skapa<br /><em>något bra tillsammans</em>
+          </h2>
+          <p class="contact__desc">
+            Öppen för uppdrag, samarbeten och spännande möjligheter. Hör av dig
+            så pratar vi!
+          </p>
+          <div class="contact__links">
+            <a href="mailto:amela.music.2000@gmail.com" class="contact__link">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/musicamela/"
+              target="_blank"
+              rel="noopener"
+              class="contact__link"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn
+            </a>
+            <!-- Lägg till Behance/GitHub/Dribbble vid behov -->
+            <!-- <a href="https://behance.net/[ditt-namn]" target="_blank" class="contact__link">Behance</a> -->
+          </div>
+          <a href="[cv.pdf]" download class="btn btn--primary">Ladda ner CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────── FOOTER ───────────────── -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          © <span id="year"></span> Amela Music.
+        </p>
+        <p class="footer__back"><a href="#hero">Tillbaka till toppen ↑</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
