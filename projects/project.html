@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Project Title] — [Your Name]</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../project.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+      <a href="../index.html" class="nav__logo">[Your Name]</a>
+      <ul class="nav__links">
+        <li><a href="../index.html#about" class="nav__link">About</a></li>
+        <li><a href="../index.html#projects" class="nav__link">Projects</a></li>
+        <li><a href="../index.html#skills" class="nav__link">Skills</a></li>
+        <li><a href="../index.html#contact" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__lang" id="langToggle" aria-label="Switch language">
+        EN
+      </button>
+      <button
+        class="nav__burger"
+        id="burger"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav__overlay" id="navOverlay">
+      <ul class="nav__links">
+        <li><a href="../index.html#about" class="nav__link">About</a></li>
+        <li><a href="../index.html#projects" class="nav__link">Projects</a></li>
+        <li><a href="../index.html#skills" class="nav__link">Skills</a></li>
+        <li><a href="../index.html#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO / HEADER -->
+    <header class="proj-hero">
+      <div class="container">
+        <a href="../index.html#projects" class="proj-back fade-up"
+          >← Back to projects</a
+        >
+        <div class="proj-hero__meta fade-up">
+          <span class="project-card__tag">[Category]</span>
+          <span class="proj-hero__date">[Month Year — Month Year]</span>
+        </div>
+        <h1 class="proj-hero__title fade-up">[Project Title]</h1>
+        <p class="proj-hero__sub fade-up">
+          [One sentence that sums up the project and your role.]
+        </p>
+
+        <div class="proj-hero__info fade-up">
+          <div class="proj-info-item">
+            <span class="proj-info-label">Role</span>
+            <span>[Your Role]</span>
+          </div>
+          <div class="proj-info-item">
+            <span class="proj-info-label">Client / Context</span>
+            <span>[Client or course name]</span>
+          </div>
+          <div class="proj-info-item">
+            <span class="proj-info-label">Tools</span>
+            <span>[Tool · Tool · Tool]</span>
+          </div>
+          <div class="proj-info-item">
+            <span class="proj-info-label">Year</span>
+            <span>[Year]</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero image / cover -->
+      <div class="proj-hero__cover fade-up">
+        <div class="proj-cover-placeholder">
+          <!-- Replace with: <img src="../images/project-cover.jpg" alt="[Project Title]" /> -->
+          <span>Cover image</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="proj-main">
+      <div class="container proj-layout">
+        <!-- ── LEFT: main content ── -->
+        <article class="proj-content">
+          <section class="proj-section fade-up">
+            <h2>Project Overview</h2>
+            <p>
+              [Write your project overview here. What was the goal, the context,
+              and who was it for?]
+            </p>
+            <p>[Add a second paragraph if needed.]</p>
+          </section>
+
+          <section class="proj-section fade-up">
+            <h2>My Contributions</h2>
+            <p>The main areas I contributed to:</p>
+
+            <!-- Repeat this block for each contribution area -->
+            <div class="proj-contribution">
+              <h3>[Contribution Area — e.g. Navigation & Layout]</h3>
+              <ul>
+                <li>[What you did and how]</li>
+                <li>[What you did and how]</li>
+                <li>[What you did and how]</li>
+              </ul>
+            </div>
+
+            <div class="proj-contribution">
+              <h3>[Contribution Area]</h3>
+              <ul>
+                <li>[What you did and how]</li>
+                <li>[What you did and how]</li>
+              </ul>
+            </div>
+
+            <div class="proj-contribution">
+              <h3>[Contribution Area]</h3>
+              <ul>
+                <li>[What you did and how]</li>
+                <li>[What you did and how]</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Image gallery — add/remove as needed -->
+          <section class="proj-section proj-gallery fade-up">
+            <h2>Visual Work</h2>
+            <div class="proj-gallery__grid">
+              <div class="proj-img-placeholder"><span>Image 1</span></div>
+              <div class="proj-img-placeholder"><span>Image 2</span></div>
+              <div class="proj-img-placeholder"><span>Image 3</span></div>
+              <div class="proj-img-placeholder"><span>Image 4</span></div>
+              <!-- Replace placeholders with:
+            <img src="../images/proj-screenshot-1.jpg" alt="Description" />
+            --></div>
+          </section>
+
+          <!-- Optional: Outcome / Results -->
+          <section class="proj-section fade-up">
+            <h2>Outcome</h2>
+            <p>
+              [What was the result? What did you learn? Any metrics or
+              feedback?]
+            </p>
+          </section>
+        </article>
+
+        <!-- ── RIGHT: sidebar ── -->
+        <aside class="proj-sidebar">
+          <div class="proj-sidebar__card fade-up">
+            <h4>Project details</h4>
+            <dl>
+              <dt>Role</dt>
+              <dd>[Your Role]</dd>
+              <dt>Client</dt>
+              <dd>[Client / Course]</dd>
+              <dt>Timeline</dt>
+              <dd>[Month Year — Month Year]</dd>
+              <dt>Tools</dt>
+              <dd>[Tool]</dd>
+              <dd>[Tool]</dd>
+              <dd>[Tool]</dd>
+            </dl>
+          </div>
+
+          <!-- Optional external link -->
+          <!--
+        <a href="[live URL]" target="_blank" class="btn btn--primary proj-sidebar__link">
+          View live site ↗
+        </a>
+        --></aside>
+      </div>
+
+      <!-- Next project navigation -->
+      <div class="proj-nav-next container fade-up">
+        <a href="../index.html#projects" class="proj-nav-next__back"
+          >← All projects</a
+        >
+        <a href="[next-project.html]" class="proj-nav-next__next">
+          <span>Next project</span>
+          <strong>[Next Project Title] →</strong>
+        </a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> [Your Name]. Designed & built by me.</p>
+        <p class="footer__back"><a href="#">Back to top ↑</a></p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consid Internship — Amela Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../project.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="../index.html" class="nav__logo">Amela Music</a>
+    <ul class="nav__links">
+      <li><a href="../about.html"          class="nav__link" data-i18n="nav-about">About</a></li>
+      <li><a href="../index.html#projects" class="nav__link" data-i18n="nav-projects">Projects</a></li>
+      <li><a href="../index.html#contact"  class="nav__link" data-i18n="nav-contact">Contact</a></li>
+    </ul>
+    <button class="nav__lang" id="langToggle" aria-label="Switch language">EN</button>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav__overlay" id="navOverlay">
+    <ul class="nav__links">
+      <li><a href="../about.html"          class="nav__link" data-i18n="nav-about">About</a></li>
+      <li><a href="../index.html#projects" class="nav__link" data-i18n="nav-projects">Projects</a></li>
+      <li><a href="../index.html#contact"  class="nav__link" data-i18n="nav-contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <header class="proj-header">
+    <div class="container">
+      <a href="../index.html#projects" class="proj-back fade-up" data-i18n="back">← Back to projects</a>
+      <div class="proj-header__top fade-up">
+        <span class="proj-header__tag" data-i18n="tag">Web Development · UI/UX</span>
+        <span class="proj-header__date">March — May 2024</span>
+      </div>
+      <h1 class="fade-up">Consid Internship</h1>
+      <p class="proj-header__sub fade-up" data-i18n="sub">
+        Built an internal UEFA Euro 2024 prediction app as a frontend developer and UI/UX designer at Consid AB, Jönköping.
+      </p>
+    </div>
+  </header>
+
+  <div class="proj-cover">
+    <div class="proj-cover__img">
+      <img src="../images/consid-cover.png" alt="Consid app" />
+    </div>
+  </div>
+
+  <div class="proj-meta">
+    <div class="container">
+      <div class="proj-meta__inner">
+        <div class="proj-meta__item">
+          <span class="proj-meta__label" data-i18n="meta-role-label">Role</span>
+          <span class="proj-meta__value" data-i18n="meta-role">Frontend Developer & UI/UX Designer</span>
+        </div>
+        <div class="proj-meta__item">
+          <span class="proj-meta__label" data-i18n="meta-client-label">Client</span>
+          <span class="proj-meta__value">Consid AB, Jönköping</span>
+        </div>
+        <div class="proj-meta__item">
+          <span class="proj-meta__label" data-i18n="meta-tools-label">Tools</span>
+          <span class="proj-meta__value">Figma · Next.js · React · Tailwind CSS · Azure DevOps</span>
+        </div>
+        <div class="proj-meta__item">
+          <span class="proj-meta__label" data-i18n="meta-year-label">Year</span>
+          <span class="proj-meta__value">2024</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="proj-body">
+    <div class="container">
+
+      <section class="proj-section fade-up">
+        <h2 data-i18n="overview-title">Project Overview</h2>
+        <p data-i18n="overview-p1">
+          During my internship at Consid AB I worked as a Frontend Developer and UI/UX Designer in a team of four interns. Our task was to build an internal web application where employees could predict match results during the UEFA Euro 2024 tournament.
+        </p>
+        <p data-i18n="overview-p2">
+          We built the app using Next.js, React, and Tailwind CSS, with .NET handling the backend. The goal was to create a responsive and user-friendly platform that made it easy for employees to register and track their predictions throughout the tournament.
+        </p>
+      </section>
+
+      <section class="proj-section fade-up">
+        <h2 data-i18n="contrib-title">My Contributions</h2>
+
+        <div class="proj-contribution">
+          <h3 data-i18n="c1-title">Navigation & Layout</h3>
+          <ul>
+            <li data-i18n="c1-1">Developed the navigation bar and footer based on a Figma design.</li>
+            <li data-i18n="c1-2">Implemented responsive design for both desktop and mobile views.</li>
+            <li data-i18n="c1-3">Created an interactive hamburger menu and hover states with Tailwind CSS.</li>
+            <li data-i18n="c1-4">Collaborated with supervisors to follow best coding practices and component-based structure.</li>
+          </ul>
+        </div>
+
+        <div class="proj-contribution">
+          <h3 data-i18n="c2-title">Group Stage Component</h3>
+          <ul>
+            <li data-i18n="c2-1">Designed and coded a group stage view displaying matches, flags, dates, and score input boxes.</li>
+            <li data-i18n="c2-2">Integrated data dynamically from an API and handled error debugging.</li>
+            <li data-i18n="c2-3">Ensured a responsive and accessible layout for all screen sizes.</li>
+          </ul>
+        </div>
+
+        <div class="proj-contribution">
+          <h3 data-i18n="c3-title">Validation & Logic</h3>
+          <ul>
+            <li data-i18n="c3-1">Implemented input validation to ensure prediction fields were filled correctly.</li>
+            <li data-i18n="c3-2">Added error messages and red borders for empty fields, improving UX feedback.</li>
+            <li data-i18n="c3-3">Connected the logic so that user predictions update the live standings table in real time.</li>
+          </ul>
+        </div>
+
+        <div class="proj-contribution">
+          <h3 data-i18n="c4-title">About Page & Metadata</h3>
+          <ul>
+            <li data-i18n="c4-1">Created an About page using Markdown integrated into Next.js.</li>
+            <li data-i18n="c4-2">Designed a favicon and improved page metadata; title, description, and OG image, for better accessibility and sharing.</li>
+          </ul>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <section class="proj-gallery">
+    <div class="container">
+      <h2 class="fade-up" data-i18n="gallery-title">Visual Work</h2>
+      <div class="proj-gallery__grid fade-up">
+        <div class="proj-img"><img src="../images/consid-start.png" alt="Home view" /></div>
+        <div class="proj-img"><img src="../images/consid-games.png" alt="Games view" /></div>
+        <div class="proj-img"><img src="../images/consid-competitors.png" alt="Competitors view" /></div>
+        <div class="proj-img"><img src="../images/consid-register-1.png" alt="Register page" /></div>
+        <div class="proj-img"><img src="../images/consid-register-2.png" alt="Register page 2" /></div>
+        <div class="proj-img"><img src="../images/consid-mobile.png" alt="Mobile view" /></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="proj-footer-nav">
+    <div class="container">
+      <a href="../index.html#projects" class="proj-nav-back" data-i18n="back">← All projects</a>
+      <a href="aurah.html" class="proj-nav-next">
+        <span data-i18n="next-label">Next project</span>
+        <strong>Aurah →</strong>
+      </a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Amela Music. <span data-i18n="footer-text">Designed & built by me.</span></p>
+      <p class="footer__back"><a href="#" data-i18n="footer-back">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+<script>window.__projectPage = true;</script>
+<script src="../script.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+    const t = {
+      en: {
+        "nav-about": "About",
+        "nav-projects": "Projects",
+        "nav-contact": "Contact",
+        "back": "← All projects",
+        "tag": "Web Development · UI/UX",
+        "sub": "Built an internal UEFA Euro 2024 prediction app as a frontend developer and UI/UX designer at Consid AB, Jönköping.",
+        "meta-role-label": "Role",
+        "meta-role": "Frontend Developer & UI/UX Designer",
+        "meta-client-label": "Client",
+        "meta-tools-label": "Tools",
+        "meta-year-label": "Year",
+        "overview-title": "Project Overview",
+        "overview-p1": "During my internship at Consid AB I worked as a Frontend Developer and UI/UX Designer in a team of four interns. Our task was to build an internal web application where employees could predict match results during the UEFA Euro 2024 tournament.",
+        "overview-p2": "We built the app using Next.js, React, and Tailwind CSS, with .NET handling the backend. The goal was to create a responsive and user-friendly platform that made it easy for employees to register and track their predictions throughout the tournament.",
+        "contrib-title": "My Contributions",
+        "c1-title": "Navigation & Layout",
+        "c1-1": "Developed the navigation bar and footer based on a Figma design.",
+        "c1-2": "Implemented responsive design for both desktop and mobile views.",
+        "c1-3": "Created an interactive hamburger menu and hover states with Tailwind CSS.",
+        "c1-4": "Collaborated with supervisors to follow best coding practices and component-based structure.",
+        "c2-title": "Group Stage Component",
+        "c2-1": "Designed and coded a group stage view displaying matches, flags, dates, and score input boxes.",
+        "c2-2": "Integrated data dynamically from an API and handled error debugging.",
+        "c2-3": "Ensured a responsive and accessible layout for all screen sizes.",
+        "c3-title": "Validation & Logic",
+        "c3-1": "Implemented input validation to ensure prediction fields were filled correctly.",
+        "c3-2": "Added error messages and red borders for empty fields, improving UX feedback.",
+        "c3-3": "Connected the logic so that user predictions update the live standings table in real time.",
+        "c4-title": "About Page & Metadata",
+        "c4-1": "Created an About page using Markdown integrated into Next.js.",
+        "c4-2": "Designed a favicon and improved page metadata; title, description, and OG image, for better accessibility and sharing.",
+        "gallery-title": "Visual Work",
+        "next-label": "Next project",
+        "footer-text": "Designed & built by me.",
+        "footer-back": "Back to top ↑"
+      },
+      sv: {
+        "nav-about": "Om mig",
+        "nav-projects": "Projekt",
+        "nav-contact": "Kontakt",
+        "back": "← Alla projekt",
+        "tag": "Webbutveckling · UI/UX",
+        "sub": "Byggde en intern UEFA Euro 2024-prediktionsapp som frontendutvecklare och UI/UX-designer på Consid AB, Jönköping.",
+        "meta-role-label": "Roll",
+        "meta-role": "Frontendutvecklare & UI/UX-designer",
+        "meta-client-label": "Kund",
+        "meta-tools-label": "Verktyg",
+        "meta-year-label": "År",
+        "overview-title": "Projektöversikt",
+        "overview-p1": "Under min praktik på Consid AB arbetade jag som frontendutvecklare och UI/UX-designer i ett team med fyra praktikanter. Vår uppgift var att bygga en intern webbapplikation där anställda kunde förutsäga matchresultat under UEFA Euro 2024-turneringen.",
+        "overview-p2": "Vi byggde appen med Next.js, React och Tailwind CSS, med .NET som hanterade backend. Målet var att skapa en responsiv och användarvänlig plattform som gjorde det enkelt för anställda att registrera och följa sina förutsägelser under turneringen.",
+        "contrib-title": "Mina bidrag",
+        "c1-title": "Navigation & Layout",
+        "c1-1": "Utvecklade navigationsfältet och footern baserat på en Figma-design.",
+        "c1-2": "Implementerade responsiv design för både desktop och mobila vyer.",
+        "c1-3": "Skapade en interaktiv hamburgermeny och hover-tillstånd med Tailwind CSS.",
+        "c1-4": "Samarbetade med handledare för att följa bästa kodpraxis och komponentbaserad struktur.",
+        "c2-title": "Gruppspelets komponent",
+        "c2-1": "Designade och kodade en gruppspeelsvy som visar matcher, flaggor, datum och poänginmatningsrutor.",
+        "c2-2": "Integrerade data dynamiskt från ett API och hanterade felsökning.",
+        "c2-3": "Säkerställde responsiv och tillgänglig layout för alla skärmstorlekar.",
+        "c3-title": "Validering & Logik",
+        "c3-1": "Implementerade indatavalidering för att säkerställa att förutsägelsefält fylldes i korrekt.",
+        "c3-2": "Lade till felmeddelanden och röda kanter för tomma fält vilket förbättrade UX-feedback.",
+        "c3-3": "Kopplade logiken så att användarnas förutsägelser uppdaterar live-rankingen i realtid.",
+        "c4-title": "Om-sida & Metadata",
+        "c4-1": "Skapade en Om-sida med Markdown integrerat i Next.js.",
+        "c4-2": "Designade en favicon och förbättrade sidans metadata; titel, beskrivning och OG-bild, för bättre tillgänglighet och delning.",
+        "gallery-title": "Visuellt arbete",
+        "next-label": "Nästa projekt",
+        "footer-text": "Designad & byggd av mig.",
+        "footer-back": "Tillbaka till toppen ↑"
+      }
+    };
+
+    function applyLang(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[lang][key]) el.textContent = t[lang][key];
+      });
+      document.getElementById('langToggle').textContent = lang === 'sv' ? 'EN' : 'SV';
+      localStorage.setItem('lang', lang);
+    }
+
+    applyLang(localStorage.getItem('lang') || 'en');
+    // Stoppa script.js från att skriva över
+window.__projectPage = true;
+
+    document.getElementById('langToggle')?.addEventListener('click', () => {
+      applyLang(localStorage.getItem('lang') === 'sv' ? 'en' : 'sv');
+    });
+  </script>
+
+</body>
+</html>
