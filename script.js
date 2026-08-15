@@ -290,9 +290,9 @@ set(".hero__disciplines", "hero.tag");
 
   // Footer
   set(".footer__back a", "footer.back");
-  const footerP = document.querySelector(".footer .container p");
+const footerP = document.querySelector(".footer .container p");
   if (footerP)
-    footerP.innerHTML = `© ${new Date().getFullYear()} Amela Music. ${t["footer.text"]}`;
+    footerP.innerHTML = `© ${new Date().getFullYear()} Amela Music.`;
 
   // Update toggle button
   const toggle = document.getElementById("langToggle");
