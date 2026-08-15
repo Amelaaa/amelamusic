@@ -216,7 +216,7 @@ button {
   position: relative;
   transition: color 0.2s;
 }
-.nav__link::after {
+/* .nav__link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -231,6 +231,13 @@ button {
 }
 .nav__link:hover::after {
   width: 100%;
+} */
+
+.nav__link::after {
+  display: none;
+}
+.nav__link:hover {
+  color: var(--blob-coral);
 }
 
 /* Burger */
