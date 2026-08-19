@@ -340,3 +340,19 @@
   object-fit: cover;
   display: block;
 }
+
+.proj-cover {
+  width: min(1200px, 100% - 48px);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.proj-cover__img img {
+  width: 100%;
+  display: block;
+}
+
+.proj-meta {
+  width: min(1200px, 100% - 48px);
+  margin: 0 auto;
+}
