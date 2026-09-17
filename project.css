@@ -69,7 +69,8 @@
 .proj-cover__img {
   width: 100%;
   aspect-ratio: 16/8;
-  background: hsl(var(--ph-hue, 210), 40%, 90%);
+  /* background: hsl(var(--ph-hue, 210), 40%, 90%); */
+  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -394,9 +395,34 @@
   object-fit: cover;
 }
 
+.stari-cover {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 @media (max-width: 600px) {
   .scanela-social-row {
     grid-template-columns: 1fr 1fr;
     gap: 12px;
   }
+}
+
+.project-card__img-placeholder img.stari-cover {
+  width: 80% !important;
+  height: 80% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block;
+  margin: auto;
+}
+
+
+.proj-cover__img img.stari-cover {
+  width: 85% !important;
+  height: 85% !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  margin: 0 auto;
 }
